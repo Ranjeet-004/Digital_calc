@@ -8,15 +8,15 @@
 </head>
 <body>
 
-<div class="calculator">
+<div class="Calculator">
     <input type="text" id="display" class="display" disabled>
-
+    //onclick is used to give action
     <div class="buttons">
         <button onclick="clearDisplay()">C</button>
         <button onclick="deleteChar()">DEL</button>
         <button class="operator" onclick="append('%')">%</button>
         <button class="operator" onclick="append('/')">/</button>
-
+   // append is used to add 
         <button onclick="append('7')">7</button>
         <button onclick="append('8')">8</button>
         <button onclick="append('9')">9</button>
@@ -34,6 +34,7 @@
 
         <button onclick="append('0')">0</button>
         <button onclick="append('.')">.</button>
+       // grid is used to give layout 2D
         <button class="equal" style="grid-column: span 2;" onclick="calculate()">=</button>
     </div>
 </div>
@@ -41,3 +42,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
